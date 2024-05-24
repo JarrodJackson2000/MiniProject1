@@ -10,6 +10,7 @@
 }
 body {
   background-color: #8e0b0b;
+  height: fit-content;
 }
 a {
   text-decoration: none;
@@ -24,6 +25,7 @@ a {
 }
 .btn:hover {
   background-color: #5f0707;
+  color: white;
 }
 
 .btn {
@@ -46,12 +48,12 @@ footer {
   width: 100%;
   background-color: #f1f1f1;
   text-align: center;
-  padding: 2px 0;
+  padding: 2px;
   font-size: 0.5em;
+  margin-top: 10px;
 }
 
 .centered-container {
-  position: relative;
   width: 65%;
   height: 65%;
   background-image: url("/assets/360_F_292203735_CSsyqyS6A4Z9Czd4Msf7qZEhoxjpzZl1.jpg");
@@ -62,6 +64,8 @@ footer {
   align-items: center;
   justify-content: center;
   border-radius: 15%;
+  margin-left: 17vw;
+  margin-bottom: 20px;
 }
 
 .overlay-content {
@@ -127,4 +131,69 @@ footer {
   line-height: 1.6; /* Line height for readability */
   margin: 20px auto; /* Center the paragraph and add space */
   max-width: 600px; /* Limit width for readability */
+}
+
+.centered-paragraph a:hover {
+  text-decoration: underline;
+}
+
+form {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #8e0b0b;
+  max-width: 400px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-control {
+  background-color: white;
+  border: 1px solid #666;
+
+  color: black; /* Set text color for entered text */
+}
+
+.form-control::placeholder {
+  color: #aaa;
+}
+
+.btn-primary {
+  background-color: #8e0b0b;
+  border-color: #5f0707;
+  display: flex;
+  margin: 20px auto 0 auto;
+}
+
+.btn-primary:hover {
+  background-color: #5f0707;
+  border-color: #666;
+}
+
+.card {
+  margin: 1rem;
+  max-height: 25rem;
+  display: flex;
+  overflow: auto;
+  margin-bottom: 5px;
+}
+
+.row {
+  justify-content: center;
+}
+
+.linkTemplate {
+  color: black;
+}
+.linkTemplate:hover {
+  color: blue;
+  text-decoration: underline;
+}
+
+.btn {
+  color: white;
 }

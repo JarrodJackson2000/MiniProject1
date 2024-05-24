@@ -10,6 +10,71 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="index.css" />
+    <template id="cardTemplate">
+      <div class="card mb-3 col-sm-12 col-md-4 col-lg-4" style="width: 18rem">
+        <img
+          src=""
+          class="card-img-top imageTemplate"
+          alt="Image could not be loaded"
+        />
+        <div class="card-body">
+          <h5 class="card-title templateTitle"></h5>
+          <p class="card-text templateDescription"></p>
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item cuisineTemplate"></li>
+          <li class="list-group-item mainIngrediantTemplate"></li>
+          <li class="list-group-item tagsTemplate"></li>
+        </ul>
+        <div class="card-body templateLink">
+          <a href="" class="linkTemplate"></a>
+        </div>
+      </div>
+    </template>
+    <template id="categoryTemplate"
+      ><div class="dropdown mb-3">
+        <button
+          class="btn btn-secondary dropdown-toggle category-title"
+          type="button"
+          data-bs-toggle="dropdown"
+          aria-expanded="false"
+          style="background-color: white; color: black"
+        >
+          Filter by Cuisine
+        </button>
+        <ul class="dropdown-menu">
+          <li>
+            <button
+              class="dropdown-item category"
+              onclick="organiseCategory(this.innerText)"
+            ></button>
+          </li>
+          <li>
+            <button
+              class="dropdown-item category"
+              onclick="organiseCategory(this.innerText)"
+            ></button>
+          </li>
+          <li>
+            <button
+              class="dropdown-item category"
+              onclick="organiseCategory(this.innerText)"
+            ></button>
+          </li>
+          <li>
+            <button
+              class="dropdown-item category"
+              onclick="organiseCategory(this.innerText)"
+            ></button>
+          </li>
+          <li>
+            <button
+              class="dropdown-item category"
+              onclick="organiseCategory(this.innerText)"
+            ></button>
+          </li>
+        </ul></div
+    ></template>
   </head>
   <body>
     <div class="main-header">
@@ -32,15 +97,24 @@
         </li>
       </ul>
     </div>
-    <div class="container-size">
-      <div class="image-container">
-        <div class="centered-container">
-          <div class="overlay-content">
-            <h1 class="generateTitle">Generate new recipe ideas now!</h1>
+    <div class="centre">
+      <div class="container-size">
+        <div>
+          <div class="centered-container">
+            <div class="overlay-content">
+              <h1 class="generateTitle">Generate new recipe ideas now!</h1>
 
-            <button class="generate-click rounded-pill">Generate</button>
+              <button
+                class="generate-click rounded-pill"
+                onclick="generateCardsAndDropdown()"
+              >
+                Generate
+              </button>
+            </div>
           </div>
         </div>
+        <div id="insertCategory"></div>
+        <div id="insertTemplate" class="row"></div>
       </div>
     </div>
     <footer>
