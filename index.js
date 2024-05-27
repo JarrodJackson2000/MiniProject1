@@ -21,7 +21,7 @@ async function generateCards() {
   categoriesArray = [...cuisineSet];
   categoriesArray[3] = "Mexican";
   categoriesArray[4] = "Other";
-  console.log(categoriesArray);
+
   clearPreviousCards();
 
   jsonData.forEach((data) => {
